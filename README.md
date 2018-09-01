@@ -1,2 +1,1 @@
-# Pikachu-demo
 # cssBatman
