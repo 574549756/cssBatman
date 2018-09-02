@@ -4,10 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>画一只皮卡丘玩玩</title>
+    <title>CSS Batman</title>
     <link rel="stylesheet" href="./vendor/prism/prism.css">
     <link rel="stylesheet" href="./css/default.css">
+    <script src="//at.alicdn.com/t/font_819502_hb9a64dhsr6.js"></script>
     <style id="styleTag"></style>
+    <style type="text/css">
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
 </head>
 
 <body>
@@ -52,12 +62,18 @@
         </div>
     </div>
     <div class="actions">
-        <div class="speedTitle">Speed</div>
-        <button data-speed="slow">·</button>
-        <button data-speed="normal" class="active">··</button>
-        <button data-speed="fast">∵</button>
+        <div class="logo">
+            <svg class="icon" aria-hidden="true" style="fill:f8f8f8;">
+                <use xlink:href="#icon-gerenlogoBold"></use>
+            </svg>
+        </div>
+        <div class="buttons">
+            <button data-speed="slow">Slow</button>
+            <button data-speed="normal" class="active">Normal</button>
+            <button data-speed="fast">Fast</button>
+        </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./vendor/jQuery/jquery-3.3.1.min.js"></script>
     <script src="./vendor/prism/prism.js"></script>
     <script src="./js/main.js"></script>
 </body>
